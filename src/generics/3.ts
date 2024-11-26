@@ -1,4 +1,4 @@
-function merge<T> (objA: T, objB: T): T {
+function merge<T, K> (objA: T, objB: K): T & K {
   return Object.assign({}, objA, objB);
 }
 

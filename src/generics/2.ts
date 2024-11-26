@@ -5,7 +5,7 @@ type AllType = {
   weight: number
 }
 
-function compare (top: Pick <AllType, "name" | "position" | "color" | "weight" >, bottom: Pick <AllType, "name" | "position" | "color" | "weight" >): AllType {
+function compare (top: Pick <AllType, "name" | "color">, bottom: Pick <AllType, "position" | "weight" >): AllType {
   return {
     name: top.name,
     color: top.color,
